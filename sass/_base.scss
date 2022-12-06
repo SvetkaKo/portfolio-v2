@@ -1,0 +1,78 @@
+$color-background: #f6f5f5;
+
+$color-white: #ffffff;
+$color-black: #000000;
+
+$color-primary: #0c3c49;
+$color-primary-light: #afd1d9;
+
+$color-text-main: $color-black;
+
+$navy-shadow: rgba(171, 176, 182, 0.7);
+
+// FONT VARIABLES
+$font-primary: 'Inconsolata', monospace;
+
+// RESPONSIVE
+$bp-largest: 75em; // 108px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+  scroll-behavior: smooth;
+  color: $color-text-main;
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  background-color: $color-white;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+}
+.cont__header {
+  padding-top: 6rem;
+  background-color: $color-white;
+}
+
+.cont__portfolio {
+  background-color: $color-background;
+  padding-bottom: 6rem;
+}
+
+.cont__footer {
+  background-color: $color-background;
+}

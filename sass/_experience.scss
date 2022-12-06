@@ -1,0 +1,59 @@
+.experience {
+  position: relative;
+  // background-image: linear-gradient(rgba($color-background, 0.95), rgba($color-background, 0.95)), url(/img/exp.jpg);
+  background-size: cover;
+  background-position: top;
+  color: $color-text-main;
+  border-radius: 2px;
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    // grid-template-rows: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1.25rem;
+
+    padding: 2rem;
+  }
+}
+
+.cert__item {
+  background-color: $color-white;
+  padding: 1rem;
+
+  transition: all 0.3s;
+  border-radius: 2px;
+
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  grid-row-gap: 0.5rem;
+
+  &:hover {
+    box-shadow: 10px 10px 20px -10px $navy-shadow;
+    // transform: translate(-0.5rem, -0.5rem);
+  }
+
+  &-heading {
+    color: $color-primary;
+  }
+
+  &-footer {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &-date {
+    color: $color-primary-light;
+  }
+
+  &-url {
+    padding-left: 2rem;
+    text-decoration: underline;
+    transition: all 0.5s;
+    color: $color-primary;
+  }
+}
+
+.cert__item-main {
+  grid-row: 1 / -1;
+}
